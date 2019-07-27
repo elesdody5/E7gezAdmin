@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">E7gez\nAdmin</string>
+    <string name="loading">loading</string>
+    <string name="no_Areas">No areas found</string>
+    <string name="no_internet_connection">no internet connection</string>
+    <string name="user_name">name</string>
+    <string name="owner">owner name</string>
+    <string name="phone">phone</string>
+    <string name="location">Location</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="government_prompt">Choose government</string>
+    <string name="city_prompt">City</string>
+    <string name="empty_view_title_text">not Fields found</string>
+    <string name="name_error">name error</string>
+    <string name="phone_error">wrong Phone number</string>
+    <string name="no_empty">not Empty</string>
+    <string name="wrong">some thing went wrong</string>
+    <array name="period">
+        <item>AM</item>
+        <item>PM</item>
+    </array>
+    <array name="days">
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </array>
+</resources>

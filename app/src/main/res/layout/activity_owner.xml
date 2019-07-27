@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_field.OwnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/ic_person" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/password_layout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:textSize="20sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Verification Code"
+                android:inputType="phone"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/send"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorAccent"
+            android:text="send"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/verify"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/colorAccent"
+            android:text="verify"
+            android:enabled="false"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>
